@@ -42,7 +42,7 @@ const Products = () => {
     <div>
       {/* Ribbon with Welcome message */}
       <div className="ribbon">
-        <span className="welcome-message">Welcome, {userName || "User"}!</span>
+        <span className="welcome-message">Welcome, {userName || "User"} 👦🏻</span>
         <button onClick={handleLogout} className="logout-btn">Logout</button>
       </div>
 
