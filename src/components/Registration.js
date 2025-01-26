@@ -30,9 +30,24 @@ const Registration = () => {
   };
 
   return (
-    <div>
-      <h2>Register</h2>
-      <form onSubmit={handleRegister}>
+
+
+
+
+
+
+
+
+
+    <div class="cont123">
+
+      {/* <h2>Register</h2> */}
+
+      <form class="form" onSubmit={handleRegister}>
+      <p class="form-title">Register</p>
+
+
+      <div class="input-container">
         <input
           type="text"
           placeholder="Enter your name"
@@ -40,6 +55,11 @@ const Registration = () => {
           onChange={(e) => setName(e.target.value)}
           required
         />
+
+        </div>
+
+
+        <div class="input-container">
         <input
           type="email"
           placeholder="Enter your email"
@@ -47,6 +67,9 @@ const Registration = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+        </div>
+
+        <div class="input-container">
         <input
           type="password"
           placeholder="Enter your password"
@@ -54,13 +77,21 @@ const Registration = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Register</button>
-      </form>
-      <p>
+
+        </div>
+
+
+        <button class="submit" type="submit">Register</button>
+        <p>
         Already have an account? <a href="/login">Login here</a>
       </p>
       {error && <p>{error}</p>}
+
+      </form>
+     
     </div>
+
+
   );
 };
 
